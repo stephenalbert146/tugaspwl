@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <title>Portfolio Stephen Albert</title>
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Stephen Albert</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#experience">Pengalaman</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Stephen Albert</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about " onclick="toggleMenu()">Tentang</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Pengalaman</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Kontak</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" alt="Stephen Albert profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hallo, perkenalkan saya</p>
+      <h1 class="title">Stephen Albert</h1>
+      <p class="section__text__p2">Mahasiswa Teknologi Informasi Universitas Sumatera Utara (USU)</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/cv.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Info Kontak
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" class="icon"
+          onclick="location.href='https:www.linkedin.com/in/stephen-albert-232b83341';" alt="" />
+        <img src="./assets/github.png" class="icon" onclick="location.href='https://github.com/stephenalbert146'" alt="" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Cari tahu lebih</p>
+    <h1 class="title">Tentang Saya</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img class="about-pic" src="./assets/about-pic.jpeg" alt="Profile Picture" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img class="icon" src="./assets/experience.png" alt="Experience icon" />
+            <h3>Lomba</h3>
+            <p>MEDALI EMAS INFORMATIKA IASC<br>MEDALI EMAS MATEMATIKA IASC
+            </p>
+          </div>
+          <div class="details-container">
+            <img class="icon" src="./assets/education.png" alt="Experience icon" />
+            <h3>Pendidikan</h3>
+            <p>SD DHARMA LOKA 2012-2018<br>SMP DHARMA LOKA 2018-2021<br>SMA DHARMA LOKA 2021-2024</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p style="text-align: justify;" ;>
+            Halo semuanya perkenalkan nama saya <b>Stephen Albert</b> bisa di panggil <b>Apen</b>, saya berasal dari Pekanbaru.
+            Merantau ke Medan untuk
+            melanjutkan pendidikan tinggi di Universitas Sumatera Utara. Kenapa saya tertarik dengan Teknologi
+            Informasi? Karena saya dari kecil sudah tertarik dan berminat dengan sesuatu yang berbau teknologi. Saya
+            memiliki hobi fitnes dan bermain games.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" class="icon arrow" onclick="location.href='./#experience'" alt="" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Jelajahi</p>
+    <h1 class="title">Pengalaman</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img class="icon" src="./assets/checkmark.png" alt="Experience icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img class="icon" src="./assets/checkmark.png" alt="Experience icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img class="icon" src="./assets/checkmark.png" alt="Experience icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img class="icon" src="./assets/checkmark.png" alt="Experience icon" />
+              <div>
+                <h3>Python</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" class="icon arrow" onclick="location.href='./#projects'" alt="" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Telusuri</p>
+    <h1 class="title">Projects Saya</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img class="project-img" src="./assets/project-1.jpg" alt="project-1" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Smart Home Central Controller</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://www.youtube.com/watch?v=8BSdHqT6vxk';">
+              Youtube
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <img src="./assets/arrow.png" class="icon arrow" onclick="location.href='./#contact'" alt="" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Hubungi</p>
+    <h1 class="title">Kontak Saya</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" class="icon contact-icon" alt="Email icon" />
+        <p><a href="mailto:stephenalbert@students.usu.ac.id">stephenalbert@students.usu.ac.id</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/email.png" class="icon contact-icon" alt="Email icon" />
+        <p><a href="https:www.linkedin.com/in/stephen-albert-232b83341">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#experience">Pengalaman</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2025 Stephen Albert. All Rights Reserved</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
